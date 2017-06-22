@@ -36,4 +36,4 @@ traindata = X[0:int(0.8 * n), :]
 trainlabel = y[0:int(0.8 * n)]
 testdata = X[int(0.8 * n):, :]
 testlabel = y[int(0.8 * n):]
-lsClassifier(traindata, trainlabel, testdata, testlabel, 0.001)
+lsClassifier(traindata, trainlabel, testdata, testlabel, 0.1)

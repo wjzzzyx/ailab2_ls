@@ -20,17 +20,25 @@ def getFeature(comment):
         v /= count
     return v
 
+'''
 l = os.listdir("../original")
-l.sort()
+l.sort(key=lambda x:int(x[:-4]))
 trantab = string.maketrans(string.punctuation, ' ' * len(string.punctuation))
-for fname in l:
-    with open(os.path.join("../original", fname)) as f:
-        for line in f:
-            line = line.translate(trantab)
-            x = getFeature(line)
-            X.append(x)
+with open("input.txt", "w") as g:
+    for fname in l:
+        with open(os.path.join("../original", fname)) as f:
+            for line in f:
+                line = line.translate(trantab)
+                g.write(line + '\n')
+'''
+
+with open("input.txt") as f:
+    for line in f:
+        x = getFeature(line)
+        X.append(x)
+
 X = np.array(X)
-with open("../data", "r") as f:
+with open("data") as f:
     for line in f:
         score = int((line.split())[0])
         if score >= 7:
