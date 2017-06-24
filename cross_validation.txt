@@ -1,0 +1,11 @@
+when lambda is 0.0001, the average accuracy is 0.7429.
+when lambda is 0.01, the average accuracy is 0.74294.
+when lambda is 0.1, the average accuracy is 0.74284.
+when lambda is 0.5, the average accuracy is 0.74268.
+when lambda is 1, the average accuracy is 0.74174.
+when lambda is 5, the average accuracy is 0.73796.
+when lambda is 10, the average accuracy is 0.73494.
+when lambda is 100, the average accuracy is 0.67586.
+when lambda is 1000, the average accuracy is 0.45708.
+when lambda is 5000, the average accuracy is 0.2639.
+when lambda is 10000, the average accuracy is 0.23788.
